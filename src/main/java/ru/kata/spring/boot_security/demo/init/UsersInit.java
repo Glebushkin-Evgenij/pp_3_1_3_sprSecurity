@@ -36,7 +36,7 @@ public class UsersInit {
                 ("admin", "Алексей", "Сидоров",
                         (byte) 24, "admin123@mail.ru", new BCryptPasswordEncoder().encode("admin"));
 
-//
+
 
         user1.setRoles(new HashSet<>(Set.of(role2)));
         user2.setRoles(new HashSet<>(Set.of(role1)));

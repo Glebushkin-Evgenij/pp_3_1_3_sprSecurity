@@ -13,7 +13,7 @@ import java.util.Set;
 @Component
 public class SuccessUserHandler implements AuthenticationSuccessHandler {
 
-    //метод опредеяет на какой url перекинет пользователя при входе, в заисимости от роли
+
     @Override
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication)
             throws IOException {
