@@ -58,15 +58,17 @@ public class AdminController {
         return "redirect:/admin";
     }
 
+    @GetMapping("/by_user_name")
+    public String findByUserName(String username) {
+        User user = userService.getUserByUsername(username);
+        return user.getUsername();
+    }
+
     @DeleteMapping("/{id}")
     public String getDeleteForm(@PathVariable("id") Long id) {
         userService.deleteById(id);
         return "redirect:/admin";
     }
 
-    @GetMapping("/by_user_name")
-    public String findByUserName(String username) {
-        User user = userService.getUserByUsername(username);
-        return user.getUsername();
-    }
+
 }

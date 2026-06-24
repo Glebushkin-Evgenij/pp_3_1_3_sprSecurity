@@ -9,12 +9,11 @@ import java.util.List;
 @Service
 public class RoleServiceImpl implements RoleService {
     private final RoleRepository rolesRepository;
-
+    public List <Role> getRoles() {
+        return rolesRepository.findAll();
+    }
     public RoleServiceImpl(RoleRepository rolesRepository) {
         this.rolesRepository = rolesRepository;
     }
 
-    public List <Role> getRoles() {
-        return rolesRepository.findAll();
-    }
 }

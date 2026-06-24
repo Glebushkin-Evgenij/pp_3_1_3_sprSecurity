@@ -37,7 +37,7 @@
                     th:text="${role}">
             </option>
         </select>
-        <button type="submit" class="btn btn-info col-2">Update User</button>
+        <button type="submit" class="btn btn-info col-2">Update</button>
         <form th:method="DELETE" th:action="@{/admin/{id}(id=${user.getId()})}">
         </form>
     </form>
