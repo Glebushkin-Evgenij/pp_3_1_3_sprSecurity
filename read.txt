@@ -1,1 +1,1 @@
-логин это username
+Вход осуществляется через PostConctruct
