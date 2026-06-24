@@ -25,6 +25,6 @@ insert into roles (role) values ('ROLE_USER'), ('ROLE_ADMIN');
 
 insert into users (username, first_name, last_name, age, password, email)
     values
-        ('user', 'name', 'last', 23, '$2a$10$iJiWiFjKGu2pZx2FoIQyaOK.cRx3zyxAobFa.OfuMPSylMdzNYCo.', 'user@gmail.com');
+        ('user', 'name', 'last', 23, 'password', 'user@gmail.com');
 
 insert into users_roles (user_id, role_id) values (1, 2);
